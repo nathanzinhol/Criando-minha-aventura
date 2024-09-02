@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <title>Campeonato de FIFA</title>
+</head>
+
+<body>
+    <main>
+        <div class="passo ativo" id="passo-0">
+            <img src="img/cenario-passo0-fifa.jpeg" alt="Campeonato de fifa">
+            <p>
+                Você organiza um campeonnato de FIFA em sua casa e agora você tem que escolher um dos 3 times para
+                jogar:
+            </p>
+            <button class="btn-proximo" data-proximo="1">Corinthians</button>
+            ou
+            <button class="btn-proximo" data-proximo="2">Flamengo</button>
+            ou
+            <button class="btn-proximo" data-proximo="3">Santos</button>
+        </div>
+        <div class="passo" id="passo-1">
+            <p>
+                Você escolhe o Corinthians, um ótimo time para jogar no campeonato, agora você precisa escolher seu
+                próximo adversário:
+            </p>
+            <button class="btn-proximo" data-proximo="4">Real Madrid</button>
+            ou
+            <button class="btn-proximo" data-proximo="5">XV de Piracicaba</button>
+        </div>
+        <div class="passo" id="passo-2">
+            <p>Você escolhe o Flamengo, um time forte para o começo do campeonato, você ganha as primeiras partidas e
+                agora precisa escolher seu adversário:</p>
+            <button class="btn-proximo" data-proximo="6">PSG</button>
+            ou
+            <button class="btn-proximo" data-proximo="7">Bahia</button>
+        </div>
+        <div class="passo" id="passo-3">
+            <p>Você escolheu o Santos, um time fraco a primeira vista, mas por ter essa desvantagem você ganha o passe
+                para usar os ídolos do time, como o Pelé e o Neymar, assim você ganha as primeiras partidas com
+                facilidade e agora você precisa escolher seu adversário:</p>
+            <button class="btn-proximo" data-proximo="8">Botafogo</button>
+            ou
+            <button class="btn-proximo" data-proximo="9">São Paulo</button>
+        </div>
+        <div class="passo" id="passo-4">
+            <p>Você escolhe o Real Madrid como adversário, o time é bem mais forte que o seu e tem uma discrepância de
+                habilidade dos jogadores muito grande, assim, depois de uma longa partida você acaba perdendo de 3-2
+                para o Real Madrid. Boa sorte na próxima!</p>
+        </div>
+        <div class="passo" id="passo-5">
+            <p> Você escolhe o XV de Piracicaba como adversário, um time pequeno e pouco conhecido, a partida para você
+                é bem facil e ao final você acaba ganhando de 2-0. Agora você precisa escolher seu adversário para uma
+                final:</p>
+            <button class="btn-proximo" data-proximo="10">Palmeiras</button>
+            ou
+            <button class="btn-proximo" data-proximo="11">Liverpool</button>
+        </div>
+        <div class="passo" id="passo-6">
+            <p>Você escolhe o PSG como adversário, um time completo e poderoso, depois de uma partida acirrada, com
+                várias faltas e pênalts, você acaba perdendo de 5-4. Boa sorte na próxima!</p>
+        </div>
+        <div class="passo" id="passo-7">
+            <p> Você escolhe o Bahia como adversário, um time consideravelmente grande, mas não muito conhecido por seus
+                jogadores ou títulos. Após uma partida acirrada você ganha de 2-1 do Bahia.</p>
+            <button class="btn-proximo" data-proximo="12">Pegar o troféu!</button>
+        </div>
+        <div class="passo" id="passo-8">
+            <p>Você escolheu o Botafogo como adversário, com o time dos Santos normal com certeza você perderia, mas com
+                os ídolos você consegue ganhar facilmente do Botafogo, terminando a partida com o placar de 3-1.</p>
+            <button class="btn-proximo" data-proximo="12">Pegar o troféu!</button>
+        </div>
+        <div class="passo" id="passo-9">
+            <p>Você escolhe o São Paulo como adversário, um time grande que com certeza o derrotaria se você estivesse
+                com o time do Santos normal, mas você está com os ídolos do Santos, então você ganha com facilidade do
+                São Paulo terminando a partida com o placar de 2-0.</p>
+            <button class="btn-proximo" data-proximo="12">Pegar o troféu!</button>
+        </div>
+        <div class="passo" id="passo-10">
+            <p>Na final, você escolhe o Palmeiras como adversário, um time formidável, a partida está difícil mas a
+                sorte está ao seu lado e em menos de 20 minutos o jogo está 2-2, e nos 40 minutos do segundo tempo, com
+                uma jogada de sorte, seu time faz mais 2 gols e o Corinthians ganha de 4-2 do Palmeiras.</p>
+            <button class="btn-proximo" data-proximo="12">Pegar o troféu!</button>
+        </div>
+        <div class="passo" id="passo-11">
+            <p>Você escolheu o Liverpool como adversário, um time grande e extremamente difícil de se disputar em uma
+                final, a partida decorre bem e o jogo termina 0-0, assim indo para os penalts, e infelizmente no último
+                chute em que o Corinthians tinha que fazer o gol para ganhar o campeonato, Yuri Alberto erra o gol e o
+                Liverpool ganha de 1-0. Boa sorte na próxima!</p>
+        </div>
+        <div class="passo" id="passo-12">
+            <img src="img/cenario-passo12-vitoria.jpeg"
+                alt="Parabéns! Você conseguiu o troféu por ganhar o campeonato!">
+            <p>PARABÉNS! Você ganhou o campeonato de FIFA!</p>
+        </div>
+    </main>
+    <script src="script.js"></script>
+
+
+
+</body>
+
+</html>
